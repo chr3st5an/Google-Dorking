@@ -63,7 +63,7 @@ Google Dorking describes the process of using advanced search filters that allow
 | relate / related | Search for documents that are related to the given website                                                               | relate:&lt;domain>                   | relate:google.com                 |
 | safesearch       | Exclude adult content such as pornographic videos                                                                        | safesearch:&lt;keyword>              | safesearch:sex                    |
 | source           | Search on a specific news site. Rather use **site**                                                                      | source:&lt;news>                     | source:theguardian                |
-| site             | Search on the given site. Given argument migth also be just a TLD such as **com, net**, etc                              | site:&lt;domain>                     | site:google.com                   |
+| site             | Search on the given site. Given argument might also be just a TLD such as **com, net**, etc                              | site:&lt;domain>                     | site:google.com                   |
 | stock            | Search for information about a market stock                                                                              | stock:&lt;stock>                     | stock:dax                         |
 | weather          | Search for information about the weather of the given location                                                           | weather:&lt;location>                | weather:Miami                     |
 
