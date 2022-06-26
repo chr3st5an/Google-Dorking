@@ -1,31 +1,3 @@
-<div style="text-align:center;">
-
-<h1>Google Dorking</h1>
-
-</div>
-
-## Table Of Contents
-
-- [Advanced Searching](#advanced-searching)
-
-- [Search Operators](#search-operators)
-
-- [Simple Examples](#simple-examples)
-
-- [Finding Valuable Information](#finding-valuable-information)
-
-- [Meta](#meta)
-
----
-
-## Advanced Searching
-
-Google Dorking describes the process of using advanced search filters that allow to retrieve more efficient results. It's a technique often used by hackers in order to find valuable information about a target. While Google Dorking itself is legal, it might quickly lead to actions that aren't. Hence using [TOR](https://www.torproject.org/) or a [VPN](https://privacyguides.org/vpn/) is recommended. 
-
----
-
-## Search Operators
-
 | Operator         | Description                                                                                                              | Syntax                               | Example                           |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------ | --------------------------------- |
 | ()               | Group multiple terms or operators. Allows advanced expressions                                                           | (&lt;term> or &lt;operator>)         | inurl:(html \| php)               |
@@ -56,7 +28,7 @@ Google Dorking describes the process of using advanced search filters that allow
 | intext           | Keyword needs to be in the text of the document                                                                          | intext:&lt;keyword>                  | intext:news                       |
 | intitle          | Keyword needs to be in the title of the document                                                                         | intitle:&lt;keyword>                 | intitle:money                     |
 | inurl            | Keyword needs to be in the URL of the document                                                                           | inurl:&lt;keyword>                   | inurl:sheet                       |
-| link / links     | Search for documents whose links contain the given keyword. Useful for finddocumentfiles that link to a specific website | link:&lt;keyword>                    | link:google                       |
+| link / links     | Search for documents whose links contain the given keyword. Useful for finding documents that link to a specific website | link:&lt;keyword>                    | link:google                       |
 | location         | Show documents based on the given location                                                                               | location:&lt;location>               | location:USA                      |
 | OR               | Same as **\|**                                                                                                           | -                                    | -                                 |
 | phonebook        | Search for related phone numbers associated with the given name                                                          | phonebook:&lt;name>                  | phonebook:"william smith"         |
@@ -67,86 +39,4 @@ Google Dorking describes the process of using advanced search filters that allow
 | stock            | Search for information about a market stock                                                                              | stock:&lt;stock>                     | stock:dax                         |
 | weather          | Search for information about the weather of the given location                                                           | weather:&lt;location>                | weather:Miami                     |
 
-[[Back to top]](#table-of-contents)
-
----
-
-## Simple Examples
-
-```dork
-"google" 1..100
-```
-
-> Search for websites that contain the word "google" and a number between 1 and 100
-
-```dork
-Videos -site:youtube.*
-```
-
-> Search for the term "Videos" but exclude results from YouTube
-
-```dork
-How to * a computer after:2022-01-01
-```
-
-> Search for websites published after the 1st January 2022 dealing about how to `use/repair/shutdown/...` a computer
-
-```dork
-allintext:homework teacher school site:gov before:2020 ext:(html | php)
-```
-
-> Search for websites published before 2020 which have the TLD `.gov`, are either html or php documents and contain the words "homework", "teacher" and "school"
-
-```dork
-@instagram chr3st5an
-```
-
-> Search for the term "chr3st5an" on instagram
-
-[[Back to top]](#table-of-contents)
-
----
-
-## Finding Valuable Information
-
-```dork
-intitle:”webcamXP 5” | inurl:"lvappl.htm"
-```
-
-> Find open/public webcams
-
-```dork
-intext:password ext:log
-```
-
-> Find log documents wich have the string "password" in it
-
-```dork
-inurl:/proc/self/cwd
-```
-
-> Find vulnerable webservers
-
-```dork
-inurl:email.xls ext:xls
-```
-
-> Find excel documents that contain email addresses
-
-```dork
-index of:mp3 intext:.mp3
-```
-
-> Find mp3 (music) documents 
-
-[[Back to top]](#table-of-contents)
-
----
-
-## Meta
-
-##### License
-
-The information provided here are dedicated to the public domain. Use them as you wish. 
-
-[[Back to top]](#table-of-contents)
+<footer style="text-align:right;">Created by <a href="https://github.com/chr3st5an/Google-Dorking">@chr3st5an</a></footer>
