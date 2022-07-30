@@ -1,8 +1,4 @@
-<div style="text-align:center;">
-
-<h1>Google Dorking</h1>
-
-</div>
+# Google Dorking
 
 ## Table Of Contents
 
@@ -14,13 +10,15 @@
 
 - [Finding Valuable Information](#finding-valuable-information)
 
+- [Further](#further)
+
 - [Meta](#meta)
 
 ---
 
 ## Advanced Searching
 
-Google Dorking describes the process of using advanced search filters that allow to retrieve more efficient results. It's a technique often used by hackers in order to find valuable information about a target. While Google Dorking itself is legal, it might quickly lead to actions that aren't. Hence using [TOR](https://www.torproject.org/) or a [VPN](https://privacyguides.org/vpn/) is recommended. 
+Google Dorking describes the process of using advanced search filters that allow to retrieve more efficient results. It is a technique often used by cybersecurity professionals in order to find valuable information about a target. While Google Dorking itself is legal (in most countries), it might quickly lead to actions that aren't, such as visiting a site with illegal content in it. Hence using [TOR](https://www.torproject.org/) or a [VPN](https://privacyguides.org/vpn/) is recommended. It is also beneficial to use a search aggregator like [SearX](https://searx.github.io/searx/).
 
 ---
 
@@ -59,7 +57,7 @@ Google Dorking describes the process of using advanced search filters that allow
 | link / links     | Search for documents whose links contain the given keyword. Useful for finding documents that link to a specific website | link:&lt;keyword>                    | link:google                       |
 | location         | Show documents based on the given location                                                                               | location:&lt;location>               | location:USA                      |
 | numrange         | Refer to **m..n**                                                                                                        | numrange:&lt;number>-&lt;number>     | numrange:1-100                    |
-| OR               | Refer to **\|**                                                                                                          | &lt;operator> OR &lt;operator>       | "google" OR "yahoo"               |
+| OR               | Refer to **\|**                                                                                                          | &lt;operator> OR &lt;operator>       | "google" OR "yahoo"               |
 | phonebook        | Search for related phone numbers associated with the given name                                                          | phonebook:&lt;name>                  | phonebook:"william smith"         |
 | relate / related | Search for documents that are related to the given website                                                               | relate:&lt;domain>                   | relate:google.com                 |
 | safesearch       | Exclude adult content such as pornographic videos                                                                        | safesearch:&lt;keyword>              | safesearch:sex                    |
@@ -111,7 +109,7 @@ allintext:homework teacher school site:gov before:2020 ext:(html | php)
 ## Finding Valuable Information
 
 ```dork
-intitle:”webcamXP 5” | inurl:"lvappl.htm"
+intitle:"webcamXP 5" | inurl:"lvappl.htm"
 ```
 
 > Find open/public webcams
@@ -138,7 +136,15 @@ inurl:email.xls ext:xls
 index of:mp3 intext:.mp3
 ```
 
-> Find mp3 (music) documents 
+> Find mp3 (music) documents
+
+[[Back to top]](#table-of-contents)
+
+---
+
+## Further
+
+You can find more Google Dorks at the [exploit-db](https://www.exploit-db.com/google-hacking-database)
 
 [[Back to top]](#table-of-contents)
 
@@ -148,6 +154,6 @@ index of:mp3 intext:.mp3
 
 ##### License
 
-The information provided here are dedicated to the public domain. Use them as you wish. 
+The information provided here are dedicated to the public domain. Use them as you wish.
 
 [[Back to top]](#table-of-contents)
